@@ -31,4 +31,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'facebook' => [
+        'token' => env('FACEBOOK_TOKEN'),
+        'whatsapp_business_id' => env('WHATSAPP_BUSINESS_ID'),
+    ],
+
 ];
