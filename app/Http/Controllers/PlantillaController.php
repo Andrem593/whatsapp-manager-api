@@ -11,7 +11,7 @@ class PlantillaController extends Controller
     // GET /api/plantillas
     public function index()
     {
-        return Plantilla::latest()->paginate(10);
+        return Plantilla::latest()->paginate(20);
     }
 
     // GET /api/plantillas/{id}

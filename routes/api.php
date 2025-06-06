@@ -12,7 +12,8 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/plantillas/sincronizar', [PlantillaController::class, 'sincronizarDesdeFacebook']);
     Route::post('/plantillas/{id}/enviar-a-facebook', [PlantillaController::class, 'enviarAFacebook']);
     Route::get('contactos', [ContactoController::class, 'index']);
-    Route::post('contactos/sync', [ContactoController::class, 'sincronizarDesdeApia']);
+    Route::post('/plantillas/enviar', [ContactoController::class, 'enviar']);
+    Route::get('contactos/sincronizar', [ContactoController::class, 'sincronizarDesdeChatwoot']);
     Route::post('contactos/excel', [ContactoController::class, 'importarExcel']);
 
     Route::post('envios', [EnvioController::class, 'store']);
